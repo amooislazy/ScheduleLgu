@@ -1,0 +1,8 @@
+{
+  "versionCode": 9,
+  "versionName": "6.5",
+  "published": true,
+  "releaseNotes": "Rebuilt with new signing identity. Users must reinstall/update manually.",
+  "sha256": "a3f0b785eacc3a26925cb1e843d980cc6e47dfb3e1759c993c138d564eea1379",
+  "apkUrl": "https://github.com/amooislazy/ScheduleLgu/releases/download/v6.6.0/app-release.apk"
+}
