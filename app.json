@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "ScheduleLGU",
+    "slug": "schedulelgu",
+    "version": "6.5",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "scheme": "schedulelgu",
+    "android": {
+      "package": "pk.edu.lgu.schedulelgu",
+      "versionCode": 7,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#12823F"
+      },
+      "permissions": [
+        "POST_NOTIFICATIONS",
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM",
+        "INTERNET"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#12823F"
+        }
+      ],
+      "expo-font",
+      [
+        "react-native-android-widget",
+        {
+          "widgets": [
+            {
+              "name": "TimetableWidget",
+              "label": "Classes today",
+              "description": "Your ScheduleLGU classes for today.",
+              "minWidth": "250dp",
+              "minHeight": "180dp",
+              "targetCellWidth": 4,
+              "targetCellHeight": 3,
+              "resizeMode": "horizontal|vertical",
+              "updatePeriodMillis": 1800000
+            },
+            {
+              "name": "NextClassWidget",
+              "label": "Next class",
+              "description": "Your next class, at a glance.",
+              "minWidth": "250dp",
+              "minHeight": "40dp",
+              "targetCellWidth": 4,
+              "targetCellHeight": 1,
+              "resizeMode": "horizontal|vertical",
+              "updatePeriodMillis": 1800000
+            }
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "91e6b36b-e95b-40f2-9dba-d603e99455ae"
+      }
+    },
+    "owner": "amooislazy"
+  }
+}
